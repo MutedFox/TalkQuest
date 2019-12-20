@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+    <edge start_id="0" dest_id="0">
+        <condition_names></condition_names>
+        <condition_values></condition_values>
+        <line_body>You don't have a lamp so I don't care.</line_body>
+        <speaker_name>Jim</speaker_name>
+        <portrait>jim_1</portrait>
+        <priority>0</priority>
+        <script></script>
+    </edge>
+    <edge start_id="0" dest_id="1">
+        <condition_names>HaveLamp</condition_names>
+        <condition_values></condition_values>
+        <line_body>I see you have a lamp there.</line_body>
+        <speaker_name>Jim</speaker_name>
+        <portrait>jim_1</portrait>
+        <priority>1</priority>
+        <script></script>
+    </edge>
+    <edge start_id="1" dest_id="2">
+        <condition_names></condition_names>
+        <condition_values></condition_values>
+        <line_body>Can I offer you this lemon for it?</line_body>
+        <speaker_name>Jim</speaker_name>
+        <portrait>jim_1</portrait>
+        <priority>1</priority>
+        <script></script>
+    </edge>
+    <edge start_id="2" dest_id="3">
+        <condition_names></condition_names>
+        <condition_values></condition_values>
+        <line_body>I will acquiesce to this trade.</line_body>
+        <speaker_name></speaker_name>
+        <portrait></portrait>
+        <priority>0</priority>
+        <script></script>
+    </edge>
+    <edge start_id="2" dest_id="4">
+        <condition_names></condition_names>
+        <condition_values></condition_values>
+        <line_body>fuck you and fuck the lemon you rode in on.</line_body>
+        <speaker_name></speaker_name>
+        <portrait></portrait>
+        <priority>0</priority>
+        <script></script>
+    </edge>
+</graph>

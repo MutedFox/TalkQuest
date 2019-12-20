@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph>
+	<edge start_id="0" dest_id="1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I can't believe this.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="2">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Every time it's the same.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="2" dest_id="3">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Every</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="3" dest_id="4">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>single</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="4" dest_id="5">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>TIME.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="5" dest_id="6">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I think that maybe just once - you  know, just once - that these flowers will finally bloom.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="6" dest_id="7">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>But no.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="7" dest_id="8">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>BUT</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="8" dest_id="9">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>NO.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="9" dest_id="10">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*sigh*</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="10" dest_id="11">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>These lousy flowers are just as bad as the last bunch. I should never have trusted that shady merchant... nobody with that many lemons can be trusted.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="11" dest_id="12">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Oh, hey, didn't notice you there.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="12" dest_id="13">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>In case you haven't noticed, my luck with blooms is pretty much zero.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="13" dest_id="14">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>To make matters worse, whenever I try to talk to them, they outright ignore me.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="14" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>If you could go and talk to those flowers over there and figure out what's wrong with them, I'd really appreciate it.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>DarfProgress</flags_set>
+		<flag_values_set>1</flag_values_set>
+	</edge>
+	<edge start_id="0" dest_id="101">
+		<flags_req>DarfProgress</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>Have you figured out what the problem is with those flowers yet?</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>1</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I don't know</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="102">
+		<flags_req>FlowerStrike</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>Yes, they're fed up with their working conditions</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="102" dest_id="103">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>So that's how it is. </line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="103" dest_id="104">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I guess I can understand why having to stand around in a bunch of dirt all the time regardless of weather for no pay whatsoever might be illegal.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="104" dest_id="105">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>That said, I'm really not an expert in hortocultural law, and I doubt you are either, so… we're going to need some help here.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="105" dest_id="106">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I don't know where you'd find a flower lawyer around these parts, but I'm sure that if you talk to anyone and everything you might find something useful.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="106" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>As for me, I'll be staying right here, waiting for you to do all the work for m- I mean, researching flower politics. Yeah.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>DarfProgress</flags_set>
+		<flag_values_set>2</flag_values_set>
+	</edge>
+	<edge start_id="0" dest_id="201">
+		<flags_req>DarfProgress</flags_req>
+		<flag_values_req>2</flag_values_req>
+		<line_body>I wonder if that circle guy is still wa-</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>2</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="201" dest_id="202">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Oh you're back already. My uh, "research" hasn't yielded results yet, but maybe you've had more luck?</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="202" dest_id="203">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I've never been lucky in my life</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="202" dest_id="300">
+		<flags_req>FloralDiplomacy</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>So there was this bee…</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="202" dest_id="400">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I've decided to support the flowers in their protest </line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>DarfBetrayal</flags_set>
+		<flag_values_set>1</flag_values_set>
+	</edge>
+	<edge start_id="203" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Same here, friend. Same here.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="300" dest_id="301">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>A bee taught you their diplomacy skills? What, by buzzing at you in morse code?</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="301" dest_id="302">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Yes</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="301" dest_id="302">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbzbuzzbuzz bz bzbzbz</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="302" dest_id="303">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I wasn't expecting that to be the actual answer, but ok. So what you're telling me is that you're going to go pacify those flowers by roleplaying as a bee?</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="303" dest_id="304">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Yes</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="303" dest_id="304">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>That's right</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="303" dest_id="304">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Obviously</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="303" dest_id="304">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzz buzzbuzzbuzz / buzz bzbzbzbz bzbz buzzbz buzzbzbuzz / buzzbuzzbuzz buzz bzbzbzbz bz bzbuzzbz bzbuzzbuzz bzbz bzbzbz bz / bzbuzzbuzz buzzbuzzbuzz bzbzbuzz bzbuzzbzbz buzzbzbz / buzzbzbzbz bz / bzbzbuzzbz buzzbuzzbuzz buzzbuzzbuzz bzbuzzbzbz bzbz bzbzbz bzbzbzbz</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="304" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>I suppose I'll just have to trust you. Go ahead and LARP like the best of them.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>DarfProgress</flags_set>
+		<flag_values_set>3</flag_values_set>
+	</edge>
+	<edge start_id="400" dest_id="401">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>A betrayal like this…!</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="401" dest_id="402">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>To think I trusted you like a friend, an unspecified family member, and this is how you repay me?!</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="402" dest_id="403">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>We may have only met a few minutes ago, but even so I shall never forget a slight of this magnitude.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="403" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Get out of my sight.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="0" dest_id="-1">
+		<flags_req>DarfBetrayal</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>I have nothing to say to you.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>10</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="0" dest_id="501">
+		<flags_req>DarfProgress</flags_req>
+		<flag_values_req>3</flag_values_req>
+		<line_body>Have you convinced those flowers yet?</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>3</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="501" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Not yet</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="501" dest_id="502">
+		<flags_req>FlowersConvinced</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>Yes but you'll have to do a few things</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="502" dest_id="503">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Well I'll be darned. I wasn't expecting it to be so straightforward.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="503" dest_id="504">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Thank you, mysterious grey circle person. I am forever in your debt.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="504" dest_id="505">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>It's not much, but I want you to take this star-sticker I have. Not as a thank you or anything, I was just hoping to get rid of some of my junk.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="505" dest_id="506">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>[GOT A STAR STICKER!]</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>DarfStar</flags_set>
+		<flag_values_set>1</flag_values_set>
+	</edge>
+	<edge start_id="506" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Anyway, get off my lawn.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>DarfProgress</flags_set>
+		<flag_values_set>4</flag_values_set>
+	</edge>
+	<edge start_id="0" dest_id="-1">
+		<flags_req>DarfProgress</flags_req>
+		<flag_values_req>4</flag_values_req>
+		<line_body>Hey, be more careful! You're tracking mud all over my perfectly clean garden.</line_body>
+		<speaker_name>Darf</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>4</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+</graph>

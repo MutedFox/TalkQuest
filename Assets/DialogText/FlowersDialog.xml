@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph>
+	<edge start_id="0" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers are staring at you intently.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="0" dest_id="1">
+		<flags_req>DarfProgress</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>*The flowers are staring at you intently.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>1</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="2">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Stare back*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="4">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Ask what's wrong*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="4">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Ask how their day has been*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="4">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Ask how they feel about the political situation at the moment*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="3">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Ask for their best omelette recipe*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="4">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Ask them to think of a number between 1 and 100*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="2" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You engage in the fiercest staring contest you've ever participate in, but lose when you realise that flowers do not need to blink.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="3" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers give you detailed instructions on how to make an omelette. *</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="4" dest_id="5">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Before you can say anything, the flowers interrupt you loudly*.</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="5" dest_id="6">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*They explain how Darf has treated them like dirt (by literally burying them in dirt) and forced them to put up with crappy work conditions.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="6" dest_id="7">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*"That's probably just fertiliser", you think to yourself but decide not to vocalise as they continue their diatribe.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="7" dest_id="8">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*It's a really long diatribe. You seriously can't even believe how long a speech this is.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="8" dest_id="9">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You wish there was a way that you could just read some narration describing how long the speech is, instead of hearing the actual thing.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="9" dest_id="10">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Sadly such a thing is impossible, but just as you begin to give up hope on exiting the conversation, they finish.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="10" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You decide to make like a flower and run away as far as possible before they can assault your eardrums again.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>FlowerStrike</flags_set>
+		<flag_values_set>1</flag_values_set>
+	</edge>
+	<edge start_id="0" dest_id="101">
+		<flags_req>FloralDiplomacy</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>*The flowers are staring at you intently.*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority>2</priority>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="102">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Greet them through a series of formal buzzes*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="103">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Skip the pleasantries and start negotiating (by buzzing)*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="200">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Buzz about something completely unrelated to anything*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="102" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers sense your hesitation and start ranting about how cold it is in the winter. Sensing that this will go nowhere, you make an excuse and leave.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="103" dest_id="104">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers feel insulted that you would start talking business without even a hello.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="104" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*They tear into you for being so incredibly inpolite but thankfully get distracted when they hear Darf sneeze and start complaining to each other, letting you escape unnoticed.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="200" dest_id="201">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You begin lecturing the flowers about the morality of not resetting the timer on the microwave.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="201" dest_id="202">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Despite being unfamiliar with such technology, the flowers are enraptured by the sheer mundanity and triviality of your complaining, and nod along to everything you say.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="202" dest_id="203">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Halfway through your impassioned speech, you realise that you really need to swing the conversation towards the flowers' protests.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="203" dest_id="204">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Buzz that you really hate it when people don't respect your time(r settings) to change topics*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="203" dest_id="206">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Buzz that you once put tinfoil in the microwave and it went really poorly, and speaking of which, the flowers would probably like something to keep them warm*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="203" dest_id="300">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Awkwardly buzz about the poor weather we've been having lately*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="203" dest_id="208">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Midway through a sentence, start buzzing about how you think you can negotiate a deal between the flowers and Darf*</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="204" dest_id="205">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers sense your change of topic and immediately interrupt you to tell you about how the sun keeps getting in their eyes from where they're planted.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="205" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*They wrestle the conversation out of your control and slam it into the very same soil they keep complaining about.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="206" dest_id="207">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers politely and calmly (but slightly patronisingly) explain to you that they do not have the nerves to experience temperature directly.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="207" dest_id="203">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You agree that what you said was presumptive and apologise before resuming your lecture about kitchen appliances.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="208" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers don't even say anything but look at you with a disappointed and annoyed look on their petals. You leave in shame.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="300" dest_id="301">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers all murmur in agreement, still transfixed by your original lecture.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="301" dest_id="302">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Upon switching to a topic that they're more familiar with, they begin to remember the fact that they were protesting.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="302" dest_id="303">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*As you observe the flowers begin to get worked up again, you decide to take the initiative and start explaining how you've already talked things over with Darf.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="303" dest_id="304">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*They seem angry at first but as you describe in unnecessary detail the measures that you plan to tell Darf later to take, the mood begins to shift.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="304" dest_id="305">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*By the end of your speech you notice some of the flowers are tearing up. A few seconds later you realise that flowers don't have tear ducts, and it's actually just rain.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="305" dest_id="306">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Even so, the flowers tell you once you're done that if those promises are lived up to, they can certainly agree to start blooming.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="306" dest_id="307">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Having said that, they also explain that it is currently winter and blooming now is not really feasible.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="307" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You see their point and are beginning to doubt if Darf understands gardening very well. But you can probably return to him regardless.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>FlowersConvinced</flags_set>
+		<flag_values_set>1</flag_values_set>
+	</edge>
+	<edge start_id="0" dest_id="401">
+		<flags_req>DarfBetrayal</flags_req>
+		<flag_values_req/>
+		<line_body>*The flowers are staring at you intently.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>3</priority>
+		<flags_set/>
+		<flag_values_set>                                                                                                                                                                                              </flag_values_set>
+	</edge>
+	<edge start_id="401" dest_id="402">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You announce to the flowers that you agree that they're been treated very harshly and you want to join their protests.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="402" dest_id="403">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*The flowers respond to this with rapturous applause, except that the sound of leaves hitting each other is pretty quiet so it just seems like an awkward silence.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="403" dest_id="404">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Regardless, they happily accept you as one of them.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="404" dest_id="405">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Just when you think you'll be able to discuss plans for the protests going forward, they instead start gossiping about some shrubs.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="405" dest_id="406">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You keep searching for ways to join their conversation but realise you fundamentally don't care about flower politics.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="406" dest_id="407">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*Was joining their protest for basically no reason whatsoever a mistake?*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="407" dest_id="408">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You'll never see eye to eye with Darf again, and these flowers clearly don't make for good company. Not to mention the fact that they can't move.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="408" dest_id="409">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*You're interrupted in your trance when one of the flowers holds out a leaf holding another, smaller leaf on it, in the shape of a star.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="409" dest_id="410">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>*It seems that they've offered it as thanks for your support. Clearly this was not a mistake after all, and you gladly accept the leafy sticker.*</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="410" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>[GOT A STAR STICKER!]</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+</graph>

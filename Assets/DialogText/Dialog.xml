@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph>
+	<edge start_id="0" dest_id="-1">
+		<condition_names/>
+		<condition_values/>
+		<line_body>You don't have a lamp so I don't care.</line_body>
+		<speaker_name>Jim</speaker_name>
+		<portrait>jim_1</portrait>
+		<script/>
+		<priority>0</priority>
+	</edge>
+	<edge start_id="0" dest_id="1">
+		<condition_names>HaveLamp</condition_names>
+		<condition_values>1</condition_values>
+		<line_body>I see you have a lamp there.</line_body>
+		<speaker_name>Jim</speaker_name>
+		<portrait>jim_1</portrait>
+		<script/>
+		<priority>1</priority>
+	</edge>
+	<edge start_id="1" dest_id="2">
+		<condition_names/>
+		<condition_values/>
+		<line_body>Can I offer you this lemon for it?</line_body>
+		<speaker_name>Jim</speaker_name>
+		<portrait>jim_1</portrait>
+		<script/>
+		<priority>1</priority>
+	</edge>
+	<edge start_id="2" dest_id="3">
+		<condition_names/>
+		<condition_values/>
+		<line_body>I will acquiesce to this trade.</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+	</edge>
+	<edge start_id="2" dest_id="4">
+		<condition_names/>
+		<condition_values/>
+		<line_body>option 2 option 2 option 2 option 2 option 2.</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+	</edge>
+    	<edge start_id="2" dest_id="4">
+		<condition_names/>
+		<condition_values/>
+		<line_body>option 3 option 3 option 3 option 3 option 3.</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+	</edge>
+    	<edge start_id="2" dest_id="4">
+		<condition_names/>
+		<condition_values/>
+		<line_body>option 4 option 4 option 4 option 4 option 4.</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+	</edge>
+    	<edge start_id="2" dest_id="4">
+		<condition_names/>
+		<condition_values/>
+		<line_body>option 5 option 5 option 5 option 5 option 5.</line_body>
+		<speaker_name/>
+		<portrait/>
+		<script/>
+		<priority>0</priority>
+	</edge>
+	<edge start_id="3" dest_id="-1">
+		<condition_names/>
+		<condition_values/>
+		<line_body>A pleasure doing business with you.</line_body>
+		<speaker_name>Jim</speaker_name>
+		<portrait>jim_1</portrait>
+		<script/>
+		<priority>0</priority>
+	</edge>
+	<edge start_id="4" dest_id="-1">
+		<condition_names/>
+		<condition_values/>
+		<line_body>…!</line_body>
+		<speaker_name>Jim</speaker_name>
+		<portrait>jim_1</portrait>
+		<script/>
+		<priority>0</priority>
+	</edge>
+</graph>

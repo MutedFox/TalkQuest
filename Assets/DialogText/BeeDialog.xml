@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph>
+	<edge start_id="0" dest_id="1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbzbzbz bz bzbuzzbzbz bzbuzzbzbz buzzbuzzbuzz / bzbz / bzbuzz buzzbuzz / buzzbzbzbz bz bz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="2">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>What?</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="2">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>What.</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="100">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Buzz buzz buzz?</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="1" dest_id="200">
+		<flags_req>DarfProgress</flags_req>
+		<flag_values_req>2</flag_values_req>
+		<line_body>bzbzbz buzzbuzzbuzz bzbzbz</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="2" dest_id="3">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbz / buzzbzbuzzbz bzbuzz buzzbz / buzzbuzzbuzz buzzbz bzbuzzbzbz buzzbzbuzzbuzz / bzbzbz bzbuzzbuzzbz bz bzbuzz buzzbzbuzz / bzbz buzzbz / buzzbzbzbz bzbzbuzz buzzbuzzbzbz buzzbuzzbzbz bz bzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="3" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbuzzbz buzzbuzzbuzz buzzbuzzbuzz buzzbzbz buzzbzbzbz buzzbzbuzzbuzz bz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="100" dest_id="101">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbuzzbzbz bz bzbuzzbz buzzbuzzbuzz / bzbuzzbuzz bzbzbzbz bzbuzz buzz bzbzbuzzbuzzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>No idea what you're saying, bye</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="102">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>Listen man if all these abstract shapes can talk normally I don't see why a bee can't either</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="101" dest_id="103">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbuzzbzbz bz bzbuzzbz buzzbuzzbuzz / buzzbzbuzzbz bzbuzzbzbz bzbzbuzz bz / bzbuzzbuzz bzbzbzbz bzbuzz buzz / buzzbzbuzzbuzz buzzbuzzbuzz bzbzbuzz bzbuzzbuzzbuzzbuzzbz bzbuzzbz bz / bzbzbz bzbuzz buzzbzbuzzbuzz bzbz buzzbz buzzbuzzbz / bzbzbzbz bzbuzz bzbzbzbz bzbuzz / bzbuzzbuzz bzbuzz bzbz buzz</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="102" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbz / bzbuzzbzbz bzbz buzz bz bzbuzzbz bzbuzz bzbuzzbzbz bzbuzzbzbz buzzbzbuzzbuzz / buzzbzbz buzzbuzzbuzz / buzzbz buzzbuzzbuzz buzz / bzbzbzbz bzbuzz bzbzbzbuzz bz / bzbzbzbuzz buzzbuzzbuzz buzzbzbuzzbz bzbuzz bzbuzzbzbz / buzzbzbuzzbz buzzbuzzbuzz bzbuzzbz buzzbzbz bzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="103" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbz bzbzbuzzbz / buzzbzbuzzbuzz buzzbuzzbuzz bzbzbuzz bzbuzzbuzzbuzzbuzzbz bzbuzzbz bz / bzbuzz buzzbzbuzzbz buzz bzbzbuzz bzbuzz bzbuzzbzbz bzbuzzbzbz buzzbzbuzzbuzz / buzz bzbuzzbz bzbuzz buzzbz bzbzbz bzbuzzbzbz bzbuzz buzz bzbz buzzbz buzzbuzzbz / buzzbuzz buzzbzbuzzbuzz / bzbuzzbuzz buzzbuzzbuzz bzbuzzbz buzzbzbz bzbzbz / buzz bzbzbzbz bz buzzbz / bzbz bzbuzzbuzzbuzzbuzzbz buzzbuzz / bzbz buzzbuzz bzbuzzbuzzbz bzbuzzbz bz bzbzbz bzbzbz bz buzzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="200" dest_id="201">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbzbz buzz bzbuzz buzzbzbuzzbuzz / buzzbzbuzzbz bzbuzz bzbuzzbzbz buzzbuzz / bzbuzz buzzbz buzzbzbz / bz buzzbzbzbuzz bzbuzzbuzzbz bzbuzzbzbz bzbuzz bzbz buzzbz / buzz bzbzbzbz bz / bzbuzzbuzzbz bzbuzzbz buzzbuzzbuzz buzzbzbzbz bzbuzzbzbz bz buzzbuzz </line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="201" dest_id="203">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbzbz bzbuzz bzbuzzbz bzbzbuzzbz bzbuzzbuzzbuzzbuzzbz bzbzbz / bzbzbuzzbz bzbuzzbzbz buzzbuzzbuzz bzbuzzbuzz bz bzbuzzbz bzbzbz / bzbuzz bzbuzzbz bz / buzzbuzzbuzz buzzbz / bzbzbz buzz bzbuzzbz bzbz buzzbzbuzz bz</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="201" dest_id="202">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbzbzbz bz bzbuzzbzbz bzbuzzbuzzbz / bzbz bzbuzzbuzzbuzzbuzzbz buzzbuzz / bzbuzzbuzzbz bzbz buzzbzbuzzbz buzzbzbuzz bzbz buzzbz buzzbuzzbz / buzz bzbzbzbz bz bzbzbz bz / buzzbzbuzzbz bzbzbzbz buzzbuzzbuzz bzbz buzzbzbuzzbz bz bzbzbz / bzbuzzbz bzbuzz buzzbz buzzbzbz buzzbuzzbuzz buzzbuzz bzbuzzbzbz buzzbzbuzzbuzz</line_body>
+		<speaker_name>[CHOICE]</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="202" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbuzzbuzz buzzbzbuzz / buzz bzbzbzbz bzbuzz buzz bzbuzzbuzzbuzzbuzzbz bzbzbz / bzbuzz / bzbuzzbzbz bzbz buzz buzz bzbuzzbzbz bz / buzzbuzz bz buzz bzbuzz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="203" dest_id="204">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbz / bzbzbz bz bz buzzbuzzbzbzbuzzbuzz / buzz bzbzbzbz bzbuzz buzz bzbuzzbuzzbuzzbuzzbz bzbzbz / bzbuzz / buzzbzbuzzbz buzzbuzzbuzz buzzbuzz bzbuzzbuzzbz bzbuzzbzbz bzbz buzzbzbuzzbz bzbuzz buzz bz buzzbzbz / bzbz bzbzbz bzbzbz bzbzbuzz bz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="204" dest_id="205">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbuzzbuzz bz bzbuzzbzbz bzbuzzbzbz / bzbz / buzzbzbz buzzbuzzbuzz / bzbzbzbz bzbuzz bzbuzzbuzzbz bzbuzzbuzzbz bz buzzbz / buzz buzzbuzzbuzz / buzzbzbuzz buzzbz buzzbuzzbuzz bzbuzzbuzz / bzbuzz / bzbuzzbzbz buzzbuzzbuzz buzz / bzbuzz buzzbzbzbz buzzbuzzbuzz bzbzbuzz buzz / bzbzbuzzbz bzbuzzbzbz buzzbuzzbuzz bzbuzzbuzz bz bzbuzzbz / bzbuzzbzbz bzbuzz bzbuzzbuzz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="205" dest_id="206">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzz bzbzbzbz bzbuzz buzz / bzbzbz bzbuzz bzbz buzzbzbz buzzbuzzbzbzbuzzbuzz / bzbuzzbuzzbz bzbuzzbzbz bzbuzz buzzbz buzz bzbzbz / bzbuzz bzbuzzbz bz / bzbuzzbuzzbz bzbuzzbz bz buzz buzz buzzbzbuzzbuzz / bzbzbz buzz bzbzbuzz bzbuzzbuzzbz bzbz buzzbzbz / bzbzbz bzbz buzzbz buzzbzbuzzbz bz / buzz bzbzbzbz bz buzzbzbuzzbuzz / buzzbzbz buzzbuzzbuzz buzzbz bzbuzzbuzzbuzzbuzzbz buzz / bzbzbzbz bzbuzz bzbzbzbuzz bz / buzzbzbzbz bzbuzzbz bzbuzz bzbz buzzbz bzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="206" dest_id="207">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbuzzbuzzbuzz bzbzbuzz bzbzbz buzz / buzz bz bzbuzzbzbz bzbuzzbzbz / buzz bzbzbzbz bz buzzbuzz / buzzbzbuzzbuzz buzzbuzzbuzz bzbzbuzz / bzbzbzbz bz bzbuzz bzbuzzbz / buzz bzbzbzbz bz bzbz bzbuzzbz / buzzbzbz bz buzzbuzz bzbuzz buzzbz buzzbzbz bzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="207" dest_id="208">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzz bzbzbzbz bz buzzbz / buzz bz bzbuzzbzbz bzbuzzbzbz / buzz bzbzbzbz bz buzzbuzz / buzzbzbuzzbuzz buzzbuzzbuzz bzbzbuzz bzbuzzbuzzbuzzbuzzbz bzbuzzbzbz bzbuzzbzbz / bzbzbz buzzbuzzbuzz bzbuzzbzbz bzbzbzbuzz bz / buzz bzbzbzbz bz bzbz bzbuzzbz / bzbuzzbuzzbz bzbuzzbz buzzbuzzbuzz buzzbzbzbz bzbuzzbzbz bz buzzbuzz bzbzbz / bzbz bzbzbuzzbz / buzz bzbzbzbz bz buzzbzbuzzbuzz / bzbuzzbuzzbuzz bzbzbuzz bzbzbz buzz / bzbuzzbuzz bzbuzz bzbz buzz / bzbuzz / bzbuzzbuzz bz bz buzzbzbuzz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="208" dest_id="209">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>buzzbzbzbz buzzbzbuzzbuzz / buzz bzbzbzbz bz buzzbz / buzz bzbzbzbz bz buzzbzbuzzbuzz bzbuzzbuzzbuzzbuzzbz bzbuzzbzbz bzbuzzbzbz / bzbzbzbz bzbuzz bzbzbzbuzz bz / bzbzbuzzbz buzzbuzzbuzz bzbuzzbz buzzbuzzbz buzzbuzzbuzz buzz buzz bz buzzbz / buzz bzbzbzbz bz bzbuzzbz bz / bzbuzzbuzz bzbuzz bzbzbz / bz bzbzbzbuzz bz bzbuzzbz / bzbuzz buzzbz / bzbz bzbzbz bzbzbz bzbzbuzz bz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set/>
+		<flag_values_set/>
+	</edge>
+	<edge start_id="209" dest_id="-1">
+		<flags_req/>
+		<flag_values_req/>
+		<line_body>bzbuzz buzzbz buzzbzbz / buzz bzbzbzbz bzbuzz buzz bzbuzzbuzzbuzzbuzzbz bzbzbz / bzbuzz bzbuzzbzbz bzbuzzbzbz bzbuzzbzbuzzbzbuzz / bzbzbz bz bz / buzzbzbuzzbuzz buzzbuzzbuzz bzbzbuzz / bzbuzz bzbuzzbz buzzbuzzbuzz bzbzbuzz buzzbz buzzbzbz</line_body>
+		<speaker_name>bee</speaker_name>
+		<portrait/>
+		<script/>
+		<priority/>
+		<flags_set>FloralDiplomacy</flags_set>
+		<flag_values_set>1</flag_values_set>
+	</edge>
+</graph>
