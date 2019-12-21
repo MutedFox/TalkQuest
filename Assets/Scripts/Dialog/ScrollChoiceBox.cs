@@ -20,13 +20,13 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
     // Object containing the choices objects; has a VerticalLayoutGroup component
     private GameObject choice_group_;   
 
-    //The scrollbar that the player doesn't move themselves but if there are enough choices, will move up and down with the choice selection
+    // The scrollbar that the player doesn't move themselves but if there are enough choices, will move up and down with the choice selection
     private Scrollbar scroll_bar_;
 
-    //The object that points at the current selection
+    // The object that points at the current selection
     private GameObject pointer_;
 
-    //Used to move the pointer appropriately; is the the amount of height needed for one choice shown in the box
+    // Used to move the pointer appropriately; is the the amount of height needed for one choice shown in the box
     private float text_height_per_choice_;
 
     private SoundManager sound_manager_;
@@ -41,16 +41,20 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
         sound_manager_ = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
     }
 
+    // Populate the choice text box objects (and number them)
     public void Initialise(List<string> choices)
     {
         text_box_instances_ = new List<GameObject>();
         choices_ = choices;
+        int count = 1;
         foreach (string choice in choices_)
         {
             GameObject text_box = Instantiate(text_box_prefab_);
             text_box.transform.SetParent(transform.GetChild(0).GetChild(0).GetChild(0).GetChild(0).GetChild(0), false);
-            text_box.GetComponentInChildren<Text>().text = choice;
+            text_box.GetComponentInChildren<Text>().text = count.ToString() + ". " + choice;
             text_box_instances_.Add(text_box);
+
+            count++;
         }
 
         scroll_bar_.value = 1f;
@@ -109,7 +113,7 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
 
     }
 
-    //Moves the pointer to point at the current selection, based on text_height_per_choice_.
+    // Moves the pointer to point at the current selection, based on text_height_per_choice_.
     private void AdjustPointer()
     {
         pointer_.transform.position = new Vector3(pointer_.transform.position.x, text_box_instances_[current_choice_].transform.position.y - text_box_instances_[current_choice_].GetComponent<RectTransform>().rect.height / 2);

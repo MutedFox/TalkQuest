@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db710b7d51c51eb459f3125a7375aa5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog_xml_filename_: 
+  dialog_xml_filename_: Assets/DialogText/
 --- !u!114 &1936853384834327081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
