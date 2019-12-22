@@ -47,21 +47,28 @@ using UnityEngine.UI;
 
 public class DialogBox : MonoBehaviour
 {
-    //The text components for the main body of the dialog and the name of the speaker respectively.
+    // The text components for the main body of the dialog and the name of the speaker respectively.
     private Text main_text_;
     private Text speaker_text_;
 
     void Awake()
     {
-        main_text_ = transform.GetChild(0).GetChild(0).GetComponent<Text>();
-        speaker_text_ = transform.GetChild(1).GetChild(0).GetComponent<Text>();
+        main_text_ = transform.Find("Dialog Box/Dialog Text").GetComponent<Text>();
+        speaker_text_ = transform.Find("Speaker Box/Speaker Text").GetComponent<Text>();
     }
 
     //TODO: text 'typing out'? much later. portraits. add indicator that player can advance. etc.
     public void UpdateDialog(string line, string speaker = null)
     {
         main_text_.text = line;
-        if (speaker != null)
+        if (speaker != null && speaker != "")
+        {
+            speaker_text_.GetComponentInParent<Image>().color = new Color(255, 255, 255, 255);
             speaker_text_.text = speaker;
+        } else // If there's no speaker, hide the speaker box
+        {
+            speaker_text_.GetComponentInParent<Image>().color = new Color(255, 255, 255, 0);
+            speaker_text_.text = "";
+        }
     }
 }
