@@ -305,3 +305,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound_clips_:
   - {fileID: 8300000, guid: 4cbbe26f9ed3f3045a8fbba2fa1c7eb9, type: 3}
+  - {fileID: 8300000, guid: cf919f765aad02c45b5026c1d5b8b9cd, type: 3}
+  - {fileID: 8300000, guid: 506e3010a0b90974a8543b3f6e74750c, type: 3}
+  - {fileID: 8300000, guid: 346ae4ddf8ac24944ab4e300b6df48a1, type: 3}

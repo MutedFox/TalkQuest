@@ -1,11 +1,11 @@
 TASKS
 =====
 
-5th: finish flag set thing; also dialog scripts in general setup properly
-update exiting dialog to use flag setting
-test existing dialog trees etc.
-
 plan out darf's area roughly
+text 'typing out'
+marker to indicate dialog can/should be advanced
+dialog advance sound
+
 plan out overall map roughly
 write crinkle/finkle dialog
 write uranus dialog

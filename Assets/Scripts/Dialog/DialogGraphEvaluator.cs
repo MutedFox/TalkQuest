@@ -45,8 +45,11 @@ public class DialogGraphEvaluator : MonoBehaviour
         }
         else if(input_.GetButtonDown("Fire1"))
         {
-            // advance or w/e
-            AdvanceNode();
+            // If the dialog is still being typed out, skip to the end immediately. TODO: another button that advances node and ignores typing?
+            if (dialog_box_instance_.GetComponent<DialogBox>().is_typing_)
+                dialog_box_instance_.GetComponent<DialogBox>().FinishDialogTyping();
+            else
+                AdvanceNode();
         }
     }
 
@@ -60,10 +63,10 @@ public class DialogGraphEvaluator : MonoBehaviour
 
     }
 
-    // Advance along graph function  (update current node/edge) TODO: how to do the choice properly
+    // Advance along graph function  (update current node/edge)
     private void ChooseNode(int choice)
     {
-        // If the conditions for this choice have not been met, nothing will happen TODO: that choice should be greyed out (and in some cases be invisible)
+        // If the conditions for this choice have not been met, nothing will happen
         DialogEdge edge = current_node_.GetOutgoingEdges()[choice];
         if (edge.IsAvailable())
         {

@@ -51,24 +51,126 @@ public class DialogBox : MonoBehaviour
     private Text main_text_;
     private Text speaker_text_;
 
+    // The arrow that appears to indicate the dialog can be advanced (starts transparent).
+    private GameObject text_advance_arrow_;
+
+    // Set to true to make the text type out character by character
+    public bool is_typing_ { get; private set; } = false;
+
+    // When is_typing_ is true, how fast text is written out in chars per second
+    // (TODO: text speed options?)
+    private float typing_chars_per_sec_ = 30f;
+
+    // When is_typing_ is true, Time.deltaTime is repeatedly added to this until enough time has passed for main_text_.text to update.
+    private float time_since_char_added_ = 0f;
+
+    // How many times per second to play a TalkBlip sound effect while is_typing_ is true.
+    private float talk_blip_per_sec_ = 10f;
+    private float time_since_talk_blip_ = 0f;
+
+    // The full line of text to display and the part of that line currently being shown respectively.
+    private string current_line_ = "";
+    private string current_line_shown_ = "";
+
+    private GameObject sound_manager_;
+
     void Awake()
     {
         main_text_ = transform.Find("Dialog Box/Dialog Text").GetComponent<Text>();
         speaker_text_ = transform.Find("Speaker Box/Speaker Text").GetComponent<Text>();
+        text_advance_arrow_ = transform.Find("Dialog Box/Text Advance Arrow").gameObject;
+
+        sound_manager_ = GameObject.Find("Game Manager/Sound Manager");
     }
 
-    //TODO: text 'typing out'? much later. portraits. add indicator that player can advance. etc.
+    private void Update()
+    {
+        // if typing and still stuff left to type
+        if(is_typing_)
+        {
+            UpdateDialogLine();
+            TryTalkBlip();
+        }
+    }
+
+    //TODO: text typing out not 'teleporting' with partially complete words
     public void UpdateDialog(string line, string speaker = null)
     {
-        main_text_.text = line;
+        current_line_ = line;
+        current_line_shown_ = "";
+        is_typing_ = true;
+        time_since_char_added_ = 0f;
+        HideAdvanceArrow();
+
+        main_text_.text = "";
         if (speaker != null && speaker != "")
         {
             speaker_text_.GetComponentInParent<Image>().color = new Color(255, 255, 255, 255);
             speaker_text_.text = speaker;
-        } else // If there's no speaker, hide the speaker box
+        } else // If there's no speaker, hide the speaker box and text
         {
             speaker_text_.GetComponentInParent<Image>().color = new Color(255, 255, 255, 0);
             speaker_text_.text = "";
         }
+    }
+
+    // Updates the text currently displayed so the current dialog line appears to be typed out char by char.
+    public void UpdateDialogLine()
+    {
+        int chars_to_add = (int)((Time.deltaTime + time_since_char_added_) * typing_chars_per_sec_);
+
+        if(chars_to_add > 0)
+        {
+            current_line_shown_ = current_line_.Substring(0, Mathf.Min(current_line_shown_.Length + chars_to_add, current_line_.Length)); 
+            main_text_.text = current_line_shown_;
+            time_since_char_added_ = 0f;
+        } else
+        {
+            time_since_char_added_ += Time.deltaTime;
+        }
+
+        if (current_line_shown_ == current_line_)
+        {
+            is_typing_ = false;
+            ShowAdvanceArrow();
+        }
+    }
+
+    // Skips the typing out effect of the current dialog line and show the rest of it immediately.
+    public void FinishDialogTyping()
+    {
+        current_line_shown_ = current_line_;
+        main_text_.text = current_line_;
+        ShowAdvanceArrow();
+
+        is_typing_ = false;
+    }
+
+    private void ShowAdvanceArrow()
+    {
+        text_advance_arrow_.GetComponent<Image>().color = Color.white;
+    }
+
+    private void HideAdvanceArrow()
+    {
+        text_advance_arrow_.GetComponent<Image>().color = Color.clear;
+    }
+
+    // If enough time has passed, calls PlayTalkBlip()
+    private void TryTalkBlip()
+    {
+        time_since_talk_blip_ += Time.deltaTime;
+        if (time_since_talk_blip_ >= (1f / talk_blip_per_sec_))
+        {
+            PlayTalkBlip();
+            time_since_talk_blip_ = 0f;
+        }
+    }
+
+    // Plays a random TalkBlip sound effect.
+    private void PlayTalkBlip()
+    {
+        int randno = Random.Range(1, 4);
+        sound_manager_.GetComponent<SoundManager>().PlaySound("TalkBlip" + randno.ToString());
     }
 }
