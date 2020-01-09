@@ -68,9 +68,10 @@ public class DialogBox : MonoBehaviour
     private float talk_blip_per_sec_ = 10f;
     private float time_since_talk_blip_ = 0f;
 
-    // The full line of text to display and the part of that line currently being shown respectively.
+    // The full line of text to display, the part of that line currently being shown, and the number of characters that is respectively
     private string current_line_ = "";
     private string current_line_shown_ = "";
+    private int characters_shown_ = 0;
 
     private GameObject sound_manager_;
 
@@ -97,12 +98,13 @@ public class DialogBox : MonoBehaviour
     public void UpdateDialog(string line, string speaker = null)
     {
         current_line_ = line;
-        current_line_shown_ = "";
+        current_line_shown_ = "<color=#00000000>"+ line + "</color>";
         is_typing_ = true;
         time_since_char_added_ = 0f;
+        characters_shown_ = 0;
         HideAdvanceArrow();
 
-        main_text_.text = "";
+        main_text_.text = current_line_shown_;
         if (speaker != null && speaker != "")
         {
             speaker_text_.GetComponentInParent<Image>().color = new Color(255, 255, 255, 255);
@@ -121,15 +123,19 @@ public class DialogBox : MonoBehaviour
 
         if(chars_to_add > 0)
         {
-            current_line_shown_ = current_line_.Substring(0, Mathf.Min(current_line_shown_.Length + chars_to_add, current_line_.Length)); 
+            // effectively shift the start of the color = clear tag along to create the illusion of characters appearing one by one
+            current_line_shown_ = current_line_.Substring(0, characters_shown_) + "<color=#00000000>" + 
+                current_line_.Substring(characters_shown_, current_line_.Length - characters_shown_) + "</color>"; 
             main_text_.text = current_line_shown_;
+
             time_since_char_added_ = 0f;
+            characters_shown_ += chars_to_add;
         } else
         {
             time_since_char_added_ += Time.deltaTime;
         }
 
-        if (current_line_shown_ == current_line_)
+        if (characters_shown_ == current_line_.Length + 1)
         {
             is_typing_ = false;
             ShowAdvanceArrow();
