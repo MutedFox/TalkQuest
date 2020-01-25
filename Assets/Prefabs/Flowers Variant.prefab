@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3202707204783416310, guid: ace04e9d86de48346a51c1f480a835ef,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7891210859700349605, guid: ace04e9d86de48346a51c1f480a835ef,
         type: 3}
       propertyPath: dialog_xml_filename_
@@ -20,12 +25,12 @@ PrefabInstance:
     - target: {fileID: 8084569715958878021, guid: ace04e9d86de48346a51c1f480a835ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.76
+      value: 2.56
       objectReference: {fileID: 0}
     - target: {fileID: 8084569715958878021, guid: ace04e9d86de48346a51c1f480a835ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.53
+      value: 2.53
       objectReference: {fileID: 0}
     - target: {fileID: 8084569715958878021, guid: ace04e9d86de48346a51c1f480a835ef,
         type: 3}

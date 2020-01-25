@@ -7,7 +7,6 @@ public class DialogGraphEvaluator : MonoBehaviour
     private DialogGraph dialog_graph_;
 
     private DialogNode current_node_;
-    private DialogEdge current_edge_;   // unneeded? just return the edge that's picked when advancing to a node
 
     // The dialog box is where the main results of the evaluator are displayed. 
     public GameObject dialog_box_prefab_;
@@ -17,40 +16,25 @@ public class DialogGraphEvaluator : MonoBehaviour
     public GameObject dialog_choice_box_prefab_;
     private GameObject dialog_choice_box_instance_ = null;
 
+    // Set to true when the current node is a choice node for the player and a choice box should be made when ready
+    bool at_choice_ = false;
+
     // When a dialog choice is to be made, these track the current selection.
     private int total_choices_ = 0;
     private int current_choice_ = 0;
 
     private InputRetriever input_;
 
-    // Start is called before the first frame update
     void Awake()
     {
         dialog_box_instance_ = Instantiate(dialog_box_prefab_);
+        dialog_box_instance_.GetComponent<DialogBox>().dialog_evaulator_ = gameObject;
         input_ = GetComponent<InputRetriever>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(dialog_choice_box_instance_ != null)
-        {
-            if (input_.GetAxisSlow("Vertical") < 0 && current_choice_ < total_choices_ - 1)
-                dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().ChangeSelection(++current_choice_);
-            else if (input_.GetAxisSlow("Vertical") > 0 && current_choice_ > 0)
-                dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().ChangeSelection(--current_choice_);
-            else if (input_.GetButtonDown("Fire1"))
-                ChooseNode(current_choice_);
-
-        }
-        else if(input_.GetButtonDown("Fire1"))
-        {
-            // If the dialog is still being typed out, skip to the end immediately. TODO: another button that advances node and ignores typing?
-            if (dialog_box_instance_.GetComponent<DialogBox>().is_typing_)
-                dialog_box_instance_.GetComponent<DialogBox>().FinishDialogTyping();
-            else
-                AdvanceNode();
-        }
+        HandleInputs();
     }
 
     public void Initialise(DialogGraph dialog_graph)
@@ -63,6 +47,36 @@ public class DialogGraphEvaluator : MonoBehaviour
 
     }
 
+    private void HandleInputs()
+    {
+        // When there's a Choice box, let the player select a choice
+        if (dialog_choice_box_instance_ != null)
+        {
+            if (input_.GetAxisSlow("Vertical") < 0 && current_choice_ < total_choices_ - 1)
+                dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().ChangeSelection(++current_choice_);
+            else if (input_.GetAxisSlow("Vertical") > 0 && current_choice_ > 0)
+                dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().ChangeSelection(--current_choice_);
+            else if (input_.GetButtonDown("Fire1"))
+                ChooseNode(current_choice_);
+
+        }
+        else if (input_.GetButtonDown("Fire1"))
+        {
+            // If the dialog is still being typed out, skip to the end immediately. TODO: another button that advances node and ignores typing?
+            if (dialog_box_instance_.GetComponent<DialogBox>().is_typing_)
+            {
+                dialog_box_instance_.GetComponent<DialogBox>().FinishDialogTyping();
+                if (at_choice_)
+                    CreateChoiceBox();
+            }
+            // If the dialog has finished typing out, wasn't skipped, and this is a choice node, a choice box needs to be created
+            else if (!dialog_box_instance_.GetComponent<DialogBox>().is_typing_ && at_choice_ && dialog_choice_box_instance_ == null)
+                CreateChoiceBox();
+            else
+                AdvanceNode();
+        }
+    }
+
     // Advance along graph function  (update current node/edge)
     private void ChooseNode(int choice)
     {
@@ -71,7 +85,6 @@ public class DialogGraphEvaluator : MonoBehaviour
         if (edge.IsAvailable())
         {
             current_node_ = edge.out_node_;      //TODO: handle cases where terminal node
-            current_edge_ = edge;
 
             // Get rid of the dialog choice box and reset the current choice selection
             Destroy(dialog_choice_box_instance_);
@@ -134,37 +147,43 @@ public class DialogGraphEvaluator : MonoBehaviour
         CheckForChoices();
     }
 
-    // When a new dialog node is reached, this method determines whether it's choice node (for the player to choose) and if so creates creates a DialogChoiceBox.
+    // When a new dialog node is reached, this method determines whether it's choice node (for the player to choose) and sets at_choice_ if so
     private void CheckForChoices()
     {
         if (current_node_.is_choice_)
+            at_choice_ = true;
+        else
+            at_choice_ = false;
+    }
+
+    // Instantiates and populates dialog_choice_box_instance_ - to be called by DialogBox when text is finished typing out.
+    private void CreateChoiceBox()
+    {
+        int highest_priority = -1;
+        List<string> choices = new List<string>();
+        foreach (DialogEdge edge in current_node_.GetOutgoingEdges())
         {
-            int highest_priority = -1;
-            List<string> choices = new List<string>();
-            foreach (DialogEdge edge in current_node_.GetOutgoingEdges())
+            if (edge.IsAvailable())
             {
-                if (edge.IsAvailable())
+                // If this is the highest priority seen so far, reset the choice count and list of choices
+                if (edge.priority_ > highest_priority)
                 {
-                    // If this is the highest priority seen so far, reset the choice count and list of choices
-                    if (edge.priority_ > highest_priority)
-                    {
-                        highest_priority = edge.priority_;
-                        total_choices_ = 1;
-                        choices = new List<string>() { edge.dialog_line_.GetLineBody() };
-                    }
-                    // If this is the same priority as the highest seen, then it's another choice
-                    else if (edge.priority_ == highest_priority)
-                    {
-                        total_choices_++;
-                        choices.Add(edge.dialog_line_.GetLineBody());
-                    }
+                    highest_priority = edge.priority_;
+                    total_choices_ = 1;
+                    choices = new List<string>() { edge.dialog_line_.GetLineBody() };
+                }
+                // If this is the same priority as the highest seen, then it's another choice
+                else if (edge.priority_ == highest_priority)
+                {
+                    total_choices_++;
+                    choices.Add(edge.dialog_line_.GetLineBody());
+                }
                 }
 
-            }
-            // TODO: currently non available choices don't appear at all but it may be good if they appear greyed out or something
-            dialog_choice_box_instance_ = Instantiate(dialog_choice_box_prefab_);
-            dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().Initialise(choices);
         }
+
+        dialog_choice_box_instance_ = Instantiate(dialog_choice_box_prefab_);
+        dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().Initialise(choices);
     }
 
     // Clean up and exit the conversation.

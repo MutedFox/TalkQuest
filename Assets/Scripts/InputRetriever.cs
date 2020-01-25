@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//This class is put on any object that accepts inputs and checks with an InputHandler to see if input for that object is currently allowed.
+// This class is put on any object that accepts inputs and checks with an InputManager to see if input for that object is currently allowed.
 public class InputRetriever : MonoBehaviour
 {
     public InputPriority input_priority_ = InputPriority.DEFAULT;
@@ -12,8 +12,8 @@ public class InputRetriever : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        input_handler_ = GameObject.Find("Input Handler");
-        input_handler_.GetComponent<InputHandler>().AddPriority(input_priority_);
+        input_handler_ = GameObject.Find("Input Manager");
+        input_handler_.GetComponent<InputManager>().AddPriority(input_priority_);
     }
 
     public float GetAxis(string axis_name)
@@ -50,7 +50,7 @@ public class InputRetriever : MonoBehaviour
 
     private bool IsSufficientPriority()
     {
-        if (input_handler_.GetComponent<InputHandler>().IsSufficientPriority(input_priority_))
+        if (input_handler_.GetComponent<InputManager>().IsSufficientPriority(input_priority_))
             return true;
         else
             return false;
@@ -58,7 +58,7 @@ public class InputRetriever : MonoBehaviour
     
     public void Destroy()
     {
-        input_handler_.GetComponent<InputHandler>().RemovePriority(input_priority_);
+        input_handler_.GetComponent<InputManager>().RemovePriority(input_priority_);
         Destroy(gameObject);
     }
 }

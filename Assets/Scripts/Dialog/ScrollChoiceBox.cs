@@ -50,7 +50,7 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
         foreach (string choice in choices_)
         {
             GameObject text_box = Instantiate(text_box_prefab_);
-            text_box.transform.SetParent(transform.GetChild(0).GetChild(0).GetChild(0).GetChild(0).GetChild(0), false);
+            text_box.transform.SetParent(choice_group_.transform, false);
             text_box.GetComponentInChildren<Text>().text = count.ToString() + ". " + choice;
             text_box_instances_.Add(text_box);
 
