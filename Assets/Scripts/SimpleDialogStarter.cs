@@ -23,6 +23,9 @@ public class SimpleDialogStarter : MonoBehaviour, IStartsDialog, IContextInterac
     {
         dialog_evaluator_instance_ = Instantiate(dialog_evaluator_prefab_);
         dialog_evaluator_instance_.GetComponent<DialogGraphEvaluator>().Initialise(dialog_graph_);
+
+        // THIS IS UGLY but also all that's really needed for this tiny project. Would be better to make a Pausable interface etc.
+        GameObject.Find("Bee").GetComponent<SineMove>().Pause();
     }
 
     public void ContextInteraction()

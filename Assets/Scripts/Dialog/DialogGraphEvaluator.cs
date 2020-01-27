@@ -56,11 +56,11 @@ public class DialogGraphEvaluator : MonoBehaviour
                 dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().ChangeSelection(++current_choice_);
             else if (input_.GetAxisSlow("Vertical") > 0 && current_choice_ > 0)
                 dialog_choice_box_instance_.GetComponent<IDialogChoiceBox>().ChangeSelection(--current_choice_);
-            else if (input_.GetButtonDown("Fire1"))
+            else if (input_.GetButtonDown("Jump"))
                 ChooseNode(current_choice_);
 
         }
-        else if (input_.GetButtonDown("Fire1"))
+        else if (input_.GetButtonDown("Jump"))
         {
             // If the dialog is still being typed out, skip to the end immediately. TODO: another button that advances node and ignores typing?
             if (dialog_box_instance_.GetComponent<DialogBox>().is_typing_)
@@ -194,5 +194,8 @@ public class DialogGraphEvaluator : MonoBehaviour
             Destroy(dialog_choice_box_instance_);
 
         input_.Destroy();
+
+        // THIS IS UGLY but also all that's really needed for this tiny project. Would be better to make a Pausable interface etc.
+        GameObject.Find("Bee").GetComponent<SineMove>().Unpause();
     }
 }

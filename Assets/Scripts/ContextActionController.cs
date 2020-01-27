@@ -23,7 +23,7 @@ public class ContextActionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (within_context_radius_ && input_.GetButtonDown("Fire1"))
+        if (within_context_radius_ && input_.GetButtonDown("Jump"))
             context_action_component_.ContextInteraction();
     }
 

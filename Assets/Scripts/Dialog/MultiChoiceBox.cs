@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// THIS IS NOT PROPERLY IMPLEMENTED
+// The idea for this is for choices that appear in totally separate boxes (rather than one box with many choices as in ScrollChoiceBox)
+// I'm leaving this alone since I may come back to this idea someday; though it could possibly be done with ScrollChoiceBox anyway with different graphics
 public class MultiChoiceBox : MonoBehaviour, IDialogChoiceBox
 {
     public GameObject panel_prefab_;

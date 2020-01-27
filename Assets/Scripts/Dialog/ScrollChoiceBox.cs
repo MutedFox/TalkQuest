@@ -107,12 +107,6 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
         return output;
     }
 
-
-    public void SubmitChoice()
-    {
-
-    }
-
     // Moves the pointer to point at the current selection, based on text_height_per_choice_.
     private void AdjustPointer()
     {
