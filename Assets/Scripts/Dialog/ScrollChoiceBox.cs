@@ -36,7 +36,7 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
         scroll_view_ = transform.Find("Scroll Choice Box/Panel/Scroll View").gameObject;
         choice_group_ = transform.Find("Scroll Choice Box/Panel/Scroll View/Viewport/Choice Box Content").gameObject;
         scroll_bar_ = scroll_view_.GetComponent<ScrollRect>().verticalScrollbar;
-        pointer_ = transform.Find("Scroll Choice Box/Panel/Finger Pointer").gameObject;
+        pointer_ = transform.Find("Scroll Choice Box/Panel/Scroll View/Finger Pointer").gameObject;
 
         sound_manager_ = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
     }
@@ -73,22 +73,32 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
         
         // top of the VerticalLayoutGroup object (i.e. top of the top choice), top of current_choice, and bottom of current_choice respectively
         float group_top = choice_group_.GetComponent<RectTransform>().anchoredPosition.y;
-        float choice_top = group_top + height_of_above_choices;
-        float choice_bottom = choice_top + text_box_instances_[current_choice_].GetComponent<RectTransform>().rect.height;
+        float choice_top = group_top + text_box_instances_[current_choice_].GetComponent<RectTransform>().anchoredPosition.y;
+        float choice_bottom = choice_top - text_box_instances_[current_choice_].GetComponent<RectTransform>().rect.height;
+
+        // The top and bottom of the visible text area. Since 
+        float view_top = 0;
+        float view_bottom =  - scroll_view_.GetComponent<RectTransform>().rect.height;
 
         // If current_choice_ is the top or bottom in the list, the viewport should always be scrolled to the maximum/minimum value.
         // Otherwise, if a choice is already completely contained in the displayed area, don't move.
         // If a choice is not completely contained, scroll the viewport the minimum amount to display it completely. 
         // (by comparing the tops/bottoms of the current choice and viewport)
         if (current_choice_ == 0)
-            scroll_bar_.value = 1;
+            scroll_bar_.value = 1f;
         else if (current_choice_ == choices_.Count - 1)
-            scroll_bar_.value = 0;
-        else if (choice_top > scroll_view_.GetComponent<RectTransform>().anchoredPosition.y + scroll_view_.GetComponent<RectTransform>().rect.height / 2)
+            scroll_bar_.value = 0f;
+        else if (choice_top > view_top)
+        {
+            Debug.Log("top");
             scroll_bar_.value = (total_height - height_of_above_choices - displayed_height) / (total_height - displayed_height);
-        else if (choice_bottom < scroll_view_.GetComponent<RectTransform>().anchoredPosition.y - scroll_view_.GetComponent<RectTransform>().rect.height / 2)
+        }
+        else if (choice_bottom < view_bottom)
+        {
+            Debug.Log("bot");
             scroll_bar_.value = (total_height - height_of_above_choices - text_box_instances_[current_choice_].GetComponent<RectTransform>().rect.height)
                 / (total_height - displayed_height);
+        }
 
         AdjustPointer();
         sound_manager_.PlaySound(pointer_move_sound_);
@@ -110,6 +120,11 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
     // Moves the pointer to point at the current selection, based on text_height_per_choice_.
     private void AdjustPointer()
     {
-        pointer_.transform.position = new Vector3(pointer_.transform.position.x, text_box_instances_[current_choice_].transform.position.y - text_box_instances_[current_choice_].GetComponent<RectTransform>().rect.height / 2);
+        RectTransform choice_rect = text_box_instances_[current_choice_].GetComponent<RectTransform>();
+        RectTransform group_rect = choice_group_.GetComponent<RectTransform>();
+        Debug.LogFormat("choice pos {0} group pos {1} ", choice_rect.anchoredPosition.y, group_rect.anchoredPosition.y);
+        pointer_.GetComponent<RectTransform>().anchoredPosition = new Vector3(pointer_.GetComponent<RectTransform>().anchoredPosition.x, 
+            choice_rect.anchoredPosition.y + group_rect.anchoredPosition.y - choice_rect.rect.height / 2 - pointer_.GetComponent<RectTransform>().rect.height * 2 / 3);
+        //pointer_.transform.position = new Vector3(pointer_.transform.position.x, text_box_instances_[current_choice_].transform.position.y - text_box_instances_[current_choice_].GetComponent<RectTransform>().rect.height / 2);
     }
 }

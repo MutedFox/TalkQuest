@@ -293,6 +293,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Input Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 790887618430052259, guid: 31129835332cc7046acd74fff3db95aa,
+        type: 3}
+      propertyPath: flag_filename_
+      value: Assets/Data/initialflags.txt
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 790887617804074390, guid: 31129835332cc7046acd74fff3db95aa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31129835332cc7046acd74fff3db95aa, type: 3}

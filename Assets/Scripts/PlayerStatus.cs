@@ -10,17 +10,15 @@ public class PlayerStatus : MonoBehaviour, IConditionHandler
 
     // Stores all data to do with the player that isn't an obvious 'stat' e.g. have they talked to NPC X yet or got to plot point Y
     // The value is an int as in some cases a 'quantity' may need to be measured
-    // TODO: populate player_flags_, probably from an xml or csv file
     Dictionary<string, int> player_flags_;
+
+    // Name of the file where flags are stored (all set to 0/default)
+    public string flag_filename_ = "Assets/Data/initialflags.txt";
 
     void Start()
     {
         player_flags_ = new Dictionary<string, int>();
-        player_flags_.Add("DarfProgress", 0);
-        player_flags_.Add("FlowerStrike", 0);
-        player_flags_.Add("DarfBetrayal", 0);
-        player_flags_.Add("FlowersConvinced", 0);
-        player_flags_.Add("FloralDiplomacy", 0);
+        PopulateFlags(flag_filename_);
     }
 
     public bool EvaluateFlag(string name, string value)
@@ -44,8 +42,18 @@ public class PlayerStatus : MonoBehaviour, IConditionHandler
 
     }
 
+    // Setup the flags based on the given file.
+    // This could be used for loading save games as well (for future projects)
     private void PopulateFlags(string filename)
     {
-        
+        string[] lines = System.IO.File.ReadAllLines(filename);
+
+        foreach(string line in lines)
+        {
+            string[] split_line = line.Split(' ');
+            int value;
+            int.TryParse(split_line[1], out value);
+            player_flags_.Add(split_line[0], value);
+        }
     }
 }
