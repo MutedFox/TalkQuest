@@ -111,7 +111,7 @@ public class ScrollChoiceBox : MonoBehaviour, IDialogChoiceBox
 
         // When a choice is too large to fit into the text box, this ensures the pointer stays within the viewport height.
         // In future versions this situation would better handled by some kind of resizing on the choice but a choice does have to be very long to get to this point.
-        pointer_y = Mathf.Clamp(pointer_y, -scroll_view_.GetComponent<RectTransform>().rect.height, -pointer_.GetComponent<RectTransform>().rect.height);
+        pointer_y = Mathf.Clamp(pointer_y, -scroll_view_.GetComponent<RectTransform>().rect.height - pointer_.GetComponent<RectTransform>().rect.height * 2 / 3, -pointer_.GetComponent<RectTransform>().rect.height);
 
         pointer_.GetComponent<RectTransform>().anchoredPosition = new Vector3(pointer_.GetComponent<RectTransform>().anchoredPosition.x, pointer_y);
     }

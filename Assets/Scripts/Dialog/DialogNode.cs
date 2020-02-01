@@ -36,6 +36,20 @@ public class DialogNode
         return out_edges_;
     }
 
+    // Return only the edges that are currently traversible
+    public List<DialogEdge> GetAvailableOutEdges()
+    {
+        List<DialogEdge> output = new List<DialogEdge>();
+
+        foreach(DialogEdge edge in out_edges_)
+        {
+            if (edge.IsAvailable())
+                output.Add(edge);
+        }
+
+        return output;
+    }
+
     // Nodes with an id of -1 are terminal nodes indicating the end of a conversation (they have no outgoing edges)
     public bool IsTerminal()
     {

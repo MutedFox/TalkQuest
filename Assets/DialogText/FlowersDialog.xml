@@ -486,7 +486,7 @@
 	</edge>
 	<edge start_id="0" dest_id="401">
 		<flags_req>DarfBetrayal</flags_req>
-		<flag_values_req/>
+		<flag_values_req>1</flag_values_req>
 		<line_body>*The flowers are staring at you intently.*</line_body>
 		<speaker_name/>
 		<portrait/>
