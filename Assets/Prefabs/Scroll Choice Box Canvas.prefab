@@ -505,7 +505,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4543497005078314807}
   m_HandleRect: {fileID: 7969368783422557575}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -581,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -35.00003, y: -50}
+  m_AnchoredPosition: {x: -35.00003, y: -40}
   m_SizeDelta: {x: 50, y: 40}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1075580843780436939

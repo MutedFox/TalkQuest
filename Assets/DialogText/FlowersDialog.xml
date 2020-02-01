@@ -191,7 +191,7 @@
 		<flags_req>FloralDiplomacy</flags_req>
 		<flag_values_req>1</flag_values_req>
 		<line_body>*The flowers are staring at you intently.*</line_body>
-		<speaker_name>[CHOICE]</speaker_name>
+		<speaker_name/>
 		<portrait/>
 		<script/>
 		<priority>2</priority>
@@ -224,7 +224,7 @@
 		<flags_req/>
 		<flag_values_req/>
 		<line_body>*Buzz about something completely unrelated to anything*</line_body>
-		<speaker_name/>
+		<speaker_name>[CHOICE]</speaker_name>
 		<portrait/>
 		<script/>
 		<priority/>
@@ -572,36 +572,25 @@
 		<flags_set/>
 		<flag_values_set/>
 	</edge>
-	<edge start_id="408" dest_id="409">
+	<edge start_id="408" dest_id="-1">
 		<flags_req/>
 		<flag_values_req/>
-		<line_body>*You're interrupted in your trance when one of the flowers holds out a leaf holding another, smaller leaf on it, in the shape of a star.*</line_body>
+		<line_body>*The consequences of this choice will surely have a tremendous effect many generations from now, or at least until you decide to close this game.*</line_body>
 		<speaker_name/>
 		<portrait/>
 		<script/>
 		<priority/>
-		<flags_set/>
-		<flag_values_set/>
+		<flags_set>FlowerEnd</flags_set>
+		<flag_values_set>1</flag_values_set>
 	</edge>
-	<edge start_id="409" dest_id="410">
-		<flags_req/>
-		<flag_values_req/>
-		<line_body>*It seems that they've offered it as thanks for your support. Clearly this was not a mistake after all, and you gladly accept the leafy sticker.*</line_body>
+	<edge start_id="0" dest_id="-1">
+		<flags_req>FlowerEnd</flags_req>
+		<flag_values_req>1</flag_values_req>
+		<line_body>*The flowers are staring at you fondly.*</line_body>
 		<speaker_name/>
 		<portrait/>
 		<script/>
-		<priority/>
-		<flags_set/>
-		<flag_values_set/>
-	</edge>
-	<edge start_id="410" dest_id="-1">
-		<flags_req/>
-		<flag_values_req/>
-		<line_body>[GOT A STAR STICKER!]</line_body>
-		<speaker_name/>
-		<portrait/>
-		<script/>
-		<priority/>
+		<priority>4</priority>
 		<flags_set/>
 		<flag_values_set/>
 	</edge>

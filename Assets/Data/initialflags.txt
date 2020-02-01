@@ -1,5 +1,7 @@
-DarfProgress 1
+DarfProgress 0
 FlowerStrike 0
 DarfBetrayal 0
 FlowersConvinced 0
 FloralDiplomacy 0
+DarfEnd 0
+FlowerEnd 0

@@ -528,29 +528,7 @@
 		<flags_set/>
 		<flag_values_set/>
 	</edge>
-	<edge start_id="504" dest_id="505">
-		<flags_req/>
-		<flag_values_req/>
-		<line_body>It's not much, but I want you to take this star-sticker I have. Not as a thank you or anything, I was just hoping to get rid of some of my junk.</line_body>
-		<speaker_name>Darf</speaker_name>
-		<portrait/>
-		<script/>
-		<priority/>
-		<flags_set/>
-		<flag_values_set/>
-	</edge>
-	<edge start_id="505" dest_id="506">
-		<flags_req/>
-		<flag_values_req/>
-		<line_body>[GOT A STAR STICKER!]</line_body>
-		<speaker_name/>
-		<portrait/>
-		<script/>
-		<priority/>
-		<flags_set>DarfStar</flags_set>
-		<flag_values_set>1</flag_values_set>
-	</edge>
-	<edge start_id="506" dest_id="-1">
+	<edge start_id="504" dest_id="-1">
 		<flags_req/>
 		<flag_values_req/>
 		<line_body>Anyway, get off my lawn.</line_body>
@@ -558,12 +536,12 @@
 		<portrait/>
 		<script/>
 		<priority/>
-		<flags_set>DarfProgress</flags_set>
-		<flag_values_set>4</flag_values_set>
+		<flags_set>DarfEnd</flags_set>
+		<flag_values_set>1</flag_values_set>
 	</edge>
 	<edge start_id="0" dest_id="-1">
-		<flags_req>DarfProgress</flags_req>
-		<flag_values_req>4</flag_values_req>
+		<flags_req>DarfEnd</flags_req>
+		<flag_values_req>1</flag_values_req>
 		<line_body>Hey, be more careful! You're tracking mud all over my perfectly clean garden.</line_body>
 		<speaker_name>Darf</speaker_name>
 		<portrait/>

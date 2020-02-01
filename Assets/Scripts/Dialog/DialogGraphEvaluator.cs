@@ -80,10 +80,12 @@ public class DialogGraphEvaluator : MonoBehaviour
     // Advance along graph function  (update current node/edge)
     private void ChooseNode(int choice)
     {
+        Debug.Log("test");
         // If the conditions for this choice have not been met, nothing will happen
         DialogEdge edge = current_node_.GetOutgoingEdges()[choice];
         if (edge.IsAvailable())
         {
+            Debug.Log("test2");
             current_node_ = edge.out_node_;      //TODO: handle cases where terminal node
 
             // Get rid of the dialog choice box and reset the current choice selection
