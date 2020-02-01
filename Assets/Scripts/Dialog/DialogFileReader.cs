@@ -28,8 +28,10 @@ public class DialogFileReader : MonoBehaviour
         // Keep the terminal_node outside of the list of nodes for simpler indexing
         DialogNode terminal_node = new DialogNode(-1);
 
+        // Setup XmlDocument to navigate through
         XmlDocument root_xml = new XmlDocument();
-        root_xml.Load(filename);
+        TextAsset xml_text_asset = (TextAsset)Resources.Load(filename, typeof(TextAsset));
+        root_xml.LoadXml(xml_text_asset.text);
 
         // Used to track which DialogNodes have been created already
         List<int> node_ids = new List<int>();

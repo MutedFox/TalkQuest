@@ -37,7 +37,7 @@ PrefabInstance:
     - target: {fileID: 7891210859700349605, guid: ace04e9d86de48346a51c1f480a835ef,
         type: 3}
       propertyPath: dialog_xml_filename_
-      value: Assets/DialogText/BeeDialog.xml
+      value: DialogText/BeeDialog
       objectReference: {fileID: 0}
     - target: {fileID: 8084569715958878021, guid: ace04e9d86de48346a51c1f480a835ef,
         type: 3}

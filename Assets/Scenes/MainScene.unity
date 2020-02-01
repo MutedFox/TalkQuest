@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -296,7 +297,7 @@ PrefabInstance:
     - target: {fileID: 790887618430052259, guid: 31129835332cc7046acd74fff3db95aa,
         type: 3}
       propertyPath: flag_filename_
-      value: Assets/Data/initialflags.txt
+      value: initialflags
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 790887617804074390, guid: 31129835332cc7046acd74fff3db95aa, type: 3}

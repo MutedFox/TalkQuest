@@ -13,7 +13,7 @@ public class PlayerStatus : MonoBehaviour, IConditionHandler
     Dictionary<string, int> player_flags_;
 
     // Name of the file where flags are stored (all set to 0/default)
-    public string flag_filename_ = "Assets/Data/initialflags.txt";
+    private string flag_filename_ = "initialflags";
 
     void Start()
     {
@@ -46,7 +46,9 @@ public class PlayerStatus : MonoBehaviour, IConditionHandler
     // This could be used for loading save games as well (for future projects)
     private void PopulateFlags(string filename)
     {
-        string[] lines = System.IO.File.ReadAllLines(filename);
+        TextAsset flag_file = (TextAsset)Resources.Load(filename, typeof(TextAsset));
+
+        string[] lines = flag_file.text.Split('\n');
 
         foreach(string line in lines)
         {
